@@ -1,5 +1,6 @@
 # YT-Downloader-Pro
 
+<<<<<<< HEAD
 YT-Downloader-Pro is a simple, easy-to-use YouTube downloader application for macOS. It allows you to download videos and playlists in both MP4 and MP3 formats.
 
 ## Features
@@ -13,81 +14,157 @@ YT-Downloader-Pro is a simple, easy-to-use YouTube downloader application for ma
 ## Installation
 
 To use YT-Downloader-Pro, you can download the latest release from the [releases page](https://github.com/your-username/yt-dl/releases). Once downloaded, simply move the `YT-Downloader-Pro.app` file to your `Applications` folder.
+<p align="center">
+  <img src="icon.png" alt="Oikos Logo" width="200"/>
+</p>
 
-## How to Use
 
-1.  Launch the YT-Downloader-Pro application.
-2.  Copy the URL of the YouTube video or playlist you want to download.
-3.  Paste the URL into the input field.
-4.  Click "Browse" to select a download location (defaults to your Downloads folder).
-5.  Click "Download MP4" or "Download MP3" to start the download.
+# YT-Downloader
 
-## Development
+YT-Downloader è un'applicazione desktop moderna per scaricare video e audio da YouTube, con interfaccia grafica elegante basata su [ttkbootstrap](https://ttkbootstrap.readthedocs.io/) e [yt-dlp](https://github.com/yt-dlp/yt-dlp).
 
-To contribute to YT-Downloader-Pro or run it from the source, follow these steps:
+## Funzionalità
 
-### Prerequisites
+- Scarica video in formato **MP4** o solo audio in **MP3**
+- Interfaccia utente intuitiva e moderna
+- Selezione della cartella di destinazione
+- Barra di avanzamento e stato del download
+- Supporto per playlist e singoli video
+- Conversione automatica in MP3 tramite ffmpeg
+- Compatibile con Windows, macOS e Linux
 
-- Python 3
-- `pip` (Python package installer)
+## Requisiti
 
-### Setup
+- Python 3.12+
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- [ttkbootstrap](https://ttkbootstrap.readthedocs.io/)
+- ffmpeg e ffprobe (inclusi nel bundle o rilevati automaticamente)
 
-1.  **Clone the repository:**
+## Installazione
 
-    ```bash
-    git clone https://github.com/your-username/yt-dl.git
-    cd yt-dl
-    ```
+1. **Clona il repository:**
+   ```sh
+   git clone <URL-del-tuo-repo>
+   cd ytdl-py
+   ```
 
-2.  **Create and activate a virtual environment:**
+2. **Installa le dipendenze:**
+   ```sh
+   pip install yt-dlp ttkbootstrap
+   ```
 
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
+3. **Assicurati che ffmpeg sia disponibile:**
+   - Su macOS: installa con Homebrew (`brew install ffmpeg`)
+   - Su Windows: scarica da [ffmpeg.org](https://ffmpeg.org/download.html) e aggiungi alla variabile PATH
+   - Oppure copia `ffmpeg` e `ffprobe` nella cartella principale del progetto
 
-3.  **Install the dependencies:**
+## Utilizzo
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+Avvia l'applicazione con:
 
-    *(Note: A `requirements.txt` file does not currently exist. You will need to create one with the following content:)*
-
-    ```
-    ttkbootstrap
-    yt-dlp
-    ```
-
-4.  **Run the application:**
-
-    ```bash
-    python downloader_nannipy.py
-    ```
-
-### Building the Application
-
-To build the `.app` bundle, you will need to install `pyinstaller`:
-
-```bash
-pip install pyinstaller
+```sh
+python downloader_nannipy.py
 ```
 
-Then, run the following command:
+### Modalità Standalone
 
-```bash
+Il progetto può essere "bundlato" in un eseguibile standalone tramite PyInstaller. Usa il file `YT-Downloader-Pro.spec` per la configurazione.
+
+```sh
 pyinstaller YT-Downloader-Pro.spec
 ```
 
-The bundled application will be located in the `dist` directory.
+### Screenshot
 
-## Future Updates
 
-Here are some ideas for future updates:
 
--   **Video Quality Selection:** Allow users to choose the video quality (e.g., 720p, 1080p, 4K).
--   **Download Queue:** Implement a queue to manage multiple downloads.
--   **Thumbnail Preview:** Display a thumbnail of the video before downloading.
--   **Localization:** Add support for multiple languages.
--   **Cross-Platform Support:** Make the application available for Windows and Linux.
+<p align="center">
+  <img src="Screenshot-ytdl.png" alt="Oikos Logo" width="500"/>
+</p>
+
+
+## Struttura del progetto
+
+- `downloader_nannipy.py` — Codice principale dell'applicazione GUI
+- `ffmpeg`, `ffprobe` — Binari ffmpeg inclusi per il bundle
+- `icon.png`, `logo.png` — Icone e logo dell'app
+- `build/` — Output di PyInstaller (cartella generata)
+- `YT-Downloader-Pro.spec` — Configurazione PyInstaller
+
+## Licenza
+
+Questo progetto è distribuito sotto licenza MIT.
+
+---
+
+**Autore:** nannipy  
+**Data di creazione:** 2025
+
+
+Powered by yt-dlp & ttkbootstrap
+- [ttkbootstrap](https://ttkbootstrap.readthedocs.io/)
+- ffmpeg e ffprobe (inclusi nel bundle o rilevati automaticamente)
+
+## Installazione
+
+1. **Clona il repository:**
+   ```sh
+   git clone <URL-del-tuo-repo>
+   cd ytdl-py
+   ```
+
+2. **Installa le dipendenze:**
+   ```sh
+   pip install yt-dlp ttkbootstrap
+   ```
+
+3. **Assicurati che ffmpeg sia disponibile:**
+   - Su macOS: installa con Homebrew (`brew install ffmpeg`)
+   - Su Windows: scarica da [ffmpeg.org](https://ffmpeg.org/download.html) e aggiungi alla variabile PATH
+   - Oppure copia `ffmpeg` e `ffprobe` nella cartella principale del progetto
+
+## Utilizzo
+
+Avvia l'applicazione con:
+
+```sh
+python downloader_nannipy.py
+```
+
+### Modalità Standalone
+
+Il progetto può essere "bundlato" in un eseguibile standalone tramite PyInstaller. Usa il file `YT-Downloader-Pro.spec` per la configurazione.
+
+```sh
+pyinstaller YT-Downloader-Pro.spec
+```
+
+### Screenshot
+
+
+
+<p align="center">
+  <img src="Screenshot-ytdl.png" alt="Oikos Logo" width="200"/>
+</p>
+
+
+## Struttura del progetto
+
+- `downloader_nannipy.py` — Codice principale dell'applicazione GUI
+- `ffmpeg`, `ffprobe` — Binari ffmpeg inclusi per il bundle
+- `icon.png`, `logo.png` — Icone e logo dell'app
+- `build/` — Output di PyInstaller (cartella generata)
+- `YT-Downloader-Pro.spec` — Configurazione PyInstaller
+
+## Licenza
+
+Questo progetto è distribuito sotto licenza MIT.
+
+---
+
+**Autore:** nannipy  
+**Data di creazione:** 2025
+
+
+Powered by yt-dlp & ttkbootstrap
+>>>>>>> 7ef0874 (Aggiungi README, file di configurazione e risorse per YT-Downloader-Pro)
