@@ -1,5 +1,5 @@
-# YT-Downloader-Pro
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 YT-Downloader-Pro is a simple, easy-to-use YouTube downloader application for macOS. It allows you to download videos and playlists in both MP4 and MP3 formats.
 
@@ -14,6 +14,10 @@ YT-Downloader-Pro is a simple, easy-to-use YouTube downloader application for ma
 ## Installation
 
 To use YT-Downloader-Pro, you can download the latest release from the [releases page](https://github.com/your-username/yt-dl/releases). Once downloaded, simply move the `YT-Downloader-Pro.app` file to your `Applications` folder.
+=======
+
+
+>>>>>>> f41d4c8 (updated readme)
 <p align="center">
   <img src="icon.png" alt="Oikos Logo" width="200"/>
 </p>
@@ -80,6 +84,7 @@ pyinstaller YT-Downloader-Pro.spec
 
 <p align="center">
   <img src="Screenshot-ytdl.png" alt="Oikos Logo" width="500"/>
+<<<<<<< HEAD
 </p>
 
 
@@ -145,6 +150,8 @@ pyinstaller YT-Downloader-Pro.spec
 
 <p align="center">
   <img src="Screenshot-ytdl.png" alt="Oikos Logo" width="200"/>
+=======
+>>>>>>> f41d4c8 (updated readme)
 </p>
 
 
