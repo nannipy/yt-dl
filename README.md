@@ -1,6 +1,14 @@
-# YT-Downloader-Pro
 
-YT-Downloader-Pro è un'applicazione desktop moderna per scaricare video e audio da YouTube, con interfaccia grafica elegante basata su [ttkbootstrap](https://ttkbootstrap.readthedocs.io/) e [yt-dlp](https://github.com/yt-dlp/yt-dlp).
+
+
+<p align="center">
+  <img src="icon.png" alt="Oikos Logo" width="200"/>
+</p>
+
+
+# YT-Downloader
+
+YT-Downloader è un'applicazione desktop moderna per scaricare video e audio da YouTube, con interfaccia grafica elegante basata su [ttkbootstrap](https://ttkbootstrap.readthedocs.io/) e [yt-dlp](https://github.com/yt-dlp/yt-dlp).
 
 ## Funzionalità
 
@@ -58,7 +66,7 @@ pyinstaller YT-Downloader-Pro.spec
 
 
 <p align="center">
-  <img src="Screenshot-ytdl.png" alt="Oikos Logo" width="200"/>
+  <img src="Screenshot-ytdl.png" alt="Oikos Logo" width="500"/>
 </p>
 
 
