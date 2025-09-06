@@ -66,7 +66,7 @@ pyinstaller YT-Downloader-Pro.spec
 
 
 <p align="center">
-  <img src="Screenshot-ytdl.png" alt="Oikos Logo" width="500"/>
+  <img src="Screenshot-ytdl.png" alt="yt-dl-screenshot" width="500"/>
 </p>
 
 
