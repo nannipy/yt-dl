@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="icon.png" alt="Oikos Logo" width="200"/>
+  <img src="icon.png" alt="YT-DL Logo" width="200"/>
 </p>
 
 
